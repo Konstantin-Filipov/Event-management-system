@@ -30,5 +30,14 @@ Costs table attributes:
 - Id INT (Primary key)
 - Cost_description VARCHAR(50)
 - Overall_cost FLOAT
-
+# Relations
+Clients – Teams 1 : 1
+One client hires ONE team, ONE team is hired by ONE client.
+- Teams – Events 1 : 1
+ONE team can only set up ONE event for the day. There cannot be more 
+than one team responsible for an event.
+- Events – Costs 1 : 1
+ONE event has ONE cost in the end.
+- Costs – Clients 1 : 1
+ONE client has only ONE cost to pay.
 
